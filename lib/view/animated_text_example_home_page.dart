@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tiny_flutter_apps/view/test_page.dart';
 
 class AnimatedTextExampleHomePage extends StatefulWidget {
   const AnimatedTextExampleHomePage({Key? key}) : super(key: key);
@@ -56,7 +57,14 @@ class _AnimatedTextExampleHomePageState
                       ),
                     ),
                   ],
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const TestPage(),
+                      ),
+                    );
+                  },
                   isRepeatingAnimation: true,
                   totalRepeatCount: 10,
                 ),
