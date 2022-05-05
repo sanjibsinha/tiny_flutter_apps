@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'typer_animated_text_page.dart';
 
 class FadeAnimatedTextExample extends StatefulWidget {
   const FadeAnimatedTextExample({Key? key}) : super(key: key);
@@ -63,7 +64,15 @@ class _FadeAnimatedTextExampleState extends State<FadeAnimatedTextExample> {
                       ),
                     ),
                   ],
-                  onTap: () {},
+                  onFinished: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const TyperAnimatedTextPage(),
+                      ),
+                    );
+                  },
+                  totalRepeatCount: 1,
                 ),
               ],
             ),
