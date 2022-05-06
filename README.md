@@ -48,3 +48,7 @@ A few resources to get you started if this is your first WordPress project:
 
 - [Download the latest WordPres](https://wordpress.org)
 - [Then start building a WordPress sample app like this:](https://sanjibsinha.com)
+
+To run your Flutter app on Chrome:
+
+- flutter run -d chrome --web-renderer html
