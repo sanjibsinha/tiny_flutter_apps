@@ -34,6 +34,7 @@ class _TypewriterAnimatedTextPageState
                   ),
                   child: AnimatedTextKit(
                     animatedTexts: [
+                      /// the cursor will be a string
                       TypewriterAnimatedText('Walk beside me',
                           cursor: '////\\\\'),
                       TypewriterAnimatedText('Be my friend', cursor: '||||'),
