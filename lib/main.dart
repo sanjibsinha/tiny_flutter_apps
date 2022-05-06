@@ -10,30 +10,6 @@ List<AnimatedTextExample> animatedTextExamples({VoidCallback? onTap}) =>
     <AnimatedTextExample>[
 
       AnimatedTextExample(
-        label: 'Typewriter',
-        color: Colors.teal[700],
-        child: SizedBox(
-          width: 250.0,
-          child: DefaultTextStyle(
-            style: const TextStyle(
-              fontSize: 30.0,
-              fontFamily: 'Agne',
-            ),
-            child: AnimatedTextKit(
-              animatedTexts: [
-                TypewriterAnimatedText('Discipline is the best tool'),
-                TypewriterAnimatedText('Design first, then code', cursor: '|'),
-                TypewriterAnimatedText('Do not patch bugs out, rewrite them',
-                    cursor: '<|>'),
-                TypewriterAnimatedText('Do not test bugs out, design them out',
-                    cursor: '💡'),
-              ],
-              onTap: onTap,
-            ),
-          ),
-        ),
-      ),
-      AnimatedTextExample(
         label: 'Scale',
         color: Colors.blue[700],
         child: DefaultTextStyle(
