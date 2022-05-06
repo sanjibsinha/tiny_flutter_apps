@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'typewriter_animated_text_page.dart';
+
 class TyperAnimatedTextPage extends StatefulWidget {
   const TyperAnimatedTextPage({Key? key}) : super(key: key);
 
@@ -49,7 +51,15 @@ class _TyperAnimatedTextPageState extends State<TyperAnimatedTextPage> {
                         ),
                       ),
                     ],
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const TypewriterAnimatedTextPage(),
+                        ),
+                      );
+                    },
                     pause: const Duration(milliseconds: 1000),
                   ),
                 ),
