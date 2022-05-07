@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'scale_animated_text_page.dart';
 
 class TypewriterAnimatedTextPage extends StatefulWidget {
   const TypewriterAnimatedTextPage({Key? key}) : super(key: key);
@@ -43,7 +44,14 @@ class _TypewriterAnimatedTextPageState
                       TypewriterAnimatedText('So many things to do',
                           cursor: '💡'),
                     ],
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ScaleAnimatedTextPage(),
+                        ),
+                      );
+                    },
                     pause: const Duration(milliseconds: 100),
                   ),
                 ),

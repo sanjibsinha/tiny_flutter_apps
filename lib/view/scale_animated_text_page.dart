@@ -26,14 +26,30 @@ class _ScaleAnimatedTextPageState extends State<ScaleAnimatedTextPage> {
               DefaultTextStyle(
                 style: GoogleFonts.laila(
                   color: Colors.redAccent,
-                  fontSize: 60.0,
+                  fontSize: 100.0,
                   fontWeight: FontWeight.bold,
                 ),
                 child: AnimatedTextKit(
+                  /// scale animated text - a new branch
+                  ///
                   animatedTexts: [
-                    ScaleAnimatedText('Think'),
-                    ScaleAnimatedText('Build'),
-                    ScaleAnimatedText('Ship'),
+                    ScaleAnimatedText('Flutter'),
+                    ScaleAnimatedText(
+                      'Single',
+                      textStyle: GoogleFonts.neuton(
+                        color: Colors.yellow,
+                        fontSize: 100.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    ScaleAnimatedText(
+                      'Codebase',
+                      textStyle: GoogleFonts.alice(
+                        color: Colors.green,
+                        fontSize: 100.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                   onTap: () {},
                   isRepeatingAnimation: true,
