@@ -9,24 +9,7 @@ void main() => runApp(const AnimatedTextExampleApp());
 List<AnimatedTextExample> animatedTextExamples({VoidCallback? onTap}) =>
     <AnimatedTextExample>[
 
-      AnimatedTextExample(
-        label: 'Scale',
-        color: Colors.blue[700],
-        child: DefaultTextStyle(
-          style: const TextStyle(
-            fontSize: 70.0,
-            fontFamily: 'Canterbury',
-          ),
-          child: AnimatedTextKit(
-            animatedTexts: [
-              ScaleAnimatedText('Think'),
-              ScaleAnimatedText('Build'),
-              ScaleAnimatedText('Ship'),
-            ],
-            onTap: onTap,
-          ),
-        ),
-      ),
+      
       AnimatedTextExample(
         label: 'Colorize',
         color: Colors.blueGrey[50],
