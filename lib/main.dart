@@ -10,30 +10,7 @@ List<AnimatedTextExample> animatedTextExamples({VoidCallback? onTap}) =>
     <AnimatedTextExample>[
 
       
-      AnimatedTextExample(
-        label: 'Colorize',
-        color: Colors.blueGrey[50],
-        child: AnimatedTextKit(
-          animatedTexts: [
-            ColorizeAnimatedText(
-              'Larry Page',
-              textStyle: _colorizeTextStyle,
-              colors: _colorizeColors,
-            ),
-            ColorizeAnimatedText(
-              'Bill Gates',
-              textStyle: _colorizeTextStyle,
-              colors: _colorizeColors,
-            ),
-            ColorizeAnimatedText(
-              'Steve Jobs',
-              textStyle: _colorizeTextStyle,
-              colors: _colorizeColors,
-            ),
-          ],
-          onTap: onTap,
-        ),
-      ),
+      
       AnimatedTextExample(
         label: 'TextLiquidFill',
         color: Colors.white,
