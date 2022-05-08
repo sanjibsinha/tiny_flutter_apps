@@ -24,38 +24,53 @@ class _ColorizeAnimatedTextPageState extends State<ColorizeAnimatedTextPage> {
                 width: 50.0,
                 height: 100.0,
               ),
-              DefaultTextStyle(
-                style: GoogleFonts.laila(
-                  color: Colors.redAccent,
-                  fontSize: 100.0,
-                  fontWeight: FontWeight.bold,
-                ),
-                child: AnimatedTextKit(
-                  /// scale animated text - a new branch
-                  ///
-                  animatedTexts: [
-                    ScaleAnimatedText('Flutter'),
-                    ScaleAnimatedText(
-                      'Single',
-                      textStyle: GoogleFonts.neuton(
-                        color: Colors.yellow,
-                        fontSize: 100.0,
-                        fontWeight: FontWeight.bold,
-                      ),
+              AnimatedTextKit(
+                /// colorize animated text - a new branch
+                ///
+                animatedTexts: [
+                  ColorizeAnimatedText(
+                    'Flutter',
+                    textStyle: GoogleFonts.adamina(
+                      fontSize: 80.0,
+                      color: Colors.lightBlue,
                     ),
-                    ScaleAnimatedText(
-                      'Codebase',
-                      textStyle: GoogleFonts.alice(
-                        color: Colors.green,
-                        fontSize: 100.0,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    colors: [
+                      Colors.purple,
+                      Colors.blue,
+                      Colors.yellow,
+                      Colors.red,
+                    ],
+                  ),
+                  ColorizeAnimatedText(
+                    'Is The',
+                    textStyle: GoogleFonts.aclonica(
+                      color: Colors.green,
+                      fontSize: 80.0,
+                      fontWeight: FontWeight.bold,
                     ),
-                  ],
-                  onTap: () {},
-                  isRepeatingAnimation: true,
-                  totalRepeatCount: 10,
-                ),
+                    colors: [
+                      Colors.purple,
+                      Colors.blue,
+                      Colors.yellow,
+                      Colors.red,
+                    ],
+                  ),
+                  ColorizeAnimatedText(
+                    'Best Tool',
+                    textStyle: GoogleFonts.cairo(
+                      color: Colors.red,
+                      fontSize: 70.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    colors: [
+                      Colors.purple,
+                      Colors.blue,
+                      Colors.yellow,
+                      Colors.red,
+                    ],
+                  ),
+                ],
+                onTap: () {},
               ),
             ],
           ),
