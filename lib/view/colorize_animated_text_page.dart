@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'colorize_animated_text_page.dart';
 
-class ScaleAnimatedTextPage extends StatefulWidget {
-  const ScaleAnimatedTextPage({Key? key}) : super(key: key);
+class ColorizeAnimatedTextPage extends StatefulWidget {
+  const ColorizeAnimatedTextPage({Key? key}) : super(key: key);
 
   @override
-  State<ScaleAnimatedTextPage> createState() => _ScaleAnimatedTextPageState();
+  State<ColorizeAnimatedTextPage> createState() =>
+      _ColorizeAnimatedTextPageState();
 }
 
-class _ScaleAnimatedTextPageState extends State<ScaleAnimatedTextPage> {
+class _ColorizeAnimatedTextPageState extends State<ColorizeAnimatedTextPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,14 +52,7 @@ class _ScaleAnimatedTextPageState extends State<ScaleAnimatedTextPage> {
                       ),
                     ),
                   ],
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const ColorizeAnimatedTextPage(),
-                      ),
-                    );
-                  },
+                  onTap: () {},
                   isRepeatingAnimation: true,
                   totalRepeatCount: 10,
                 ),
