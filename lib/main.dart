@@ -1,30 +1,13 @@
 import 'package:flutter/material.dart';
+import 'view/text_liquidi_fill_page.dart';
 
-import 'view/animated_text_example_app.dart';
+//import 'view/animated_text_example_app.dart';
 
-void main() => runApp(const AnimatedTextExampleApp());
+void main() => runApp(const TextLiquidiFillPage());
+
+
 /* 
-
-
-List<AnimatedTextExample> animatedTextExamples({VoidCallback? onTap}) =>
-    <AnimatedTextExample>[
-
-      
-      
-      AnimatedTextExample(
-        label: 'TextLiquidFill',
-        color: Colors.white,
-        child: TextLiquidFill(
-          text: 'LIQUIDY',
-          waveColor: Colors.blueAccent,
-          boxBackgroundColor: Colors.redAccent,
-          textStyle: const TextStyle(
-            fontSize: 70,
-            fontWeight: FontWeight.bold,
-          ),
-          boxHeight: 300,
-        ),
-      ),
+  
       AnimatedTextExample(
         label: 'Wavy Text',
         color: Colors.purple,
