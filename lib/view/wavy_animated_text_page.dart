@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,16 +34,33 @@ class _WavyAnimatedTextPageState extends State<WavyAnimatedTextPage> {
                     color: Colors.yellow,
                   ),
                   child: AnimatedTextKit(
+                    /// adding wavy animation
+                    ///
                     animatedTexts: [
                       WavyAnimatedText(
-                        'Hello World',
-                        textStyle: const TextStyle(
-                          fontSize: 24.0,
+                        'Flutter',
+                        textStyle: GoogleFonts.cairo(
+                          color: Colors.green,
+                          fontSize: 80.0,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      WavyAnimatedText('Look at the waves'),
-                      WavyAnimatedText('They look so Amazing'),
+                      WavyAnimatedText(
+                        'Is Beautiful',
+                        textStyle: GoogleFonts.mandali(
+                          color: Colors.amber[600],
+                          fontSize: 50.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      WavyAnimatedText(
+                        'Isn\'t it?',
+                        textStyle: const TextStyle(
+                          fontSize: 60.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.redAccent,
+                        ),
+                      ),
                     ],
                     onTap: () {
                       Navigator.push(
