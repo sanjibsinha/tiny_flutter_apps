@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'view/text_liquidi_fill_page.dart';
 
-//import 'view/animated_text_example_app.dart';
+import 'view/animated_text_example_app.dart';
 
-void main() => runApp(const TextLiquidiFillPage());
+void main() => runApp(const AnimatedTextExampleApp());
 
 
 /* 
