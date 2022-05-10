@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+/// experimenting with liquid fill animation text
+///
 
 class TextLiquidiFillPage extends StatelessWidget {
   const TextLiquidiFillPage({Key? key}) : super(key: key);
@@ -15,26 +19,21 @@ class TextLiquidiFillPage extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const SizedBox(
-                  width: 20.0,
-                  height: 100.0,
-                ),
-                const Text(
-                  'Fade: ',
-                  style: TextStyle(fontSize: 43.0),
-                ),
-                const SizedBox(
-                  width: 20.0,
+                  width: 50.0,
                   height: 100.0,
                 ),
                 TextLiquidFill(
                   text: 'LIQUIDY',
-                  waveColor: Colors.blueAccent,
-                  boxBackgroundColor: Colors.redAccent,
-                  textStyle: const TextStyle(
-                    fontSize: 70,
+                  waveColor: Colors.yellow,
+                  boxBackgroundColor: Colors.deepPurple,
+                  textStyle: GoogleFonts.laila(
+                    fontSize: 70.0,
                     fontWeight: FontWeight.bold,
                   ),
-                  boxHeight: 300,
+                  boxHeight: 250,
+                  boxWidth: 350,
+                  loadDuration: const Duration(seconds: 10),
+                  waveDuration: const Duration(seconds: 6),
                 ),
               ],
             ),
