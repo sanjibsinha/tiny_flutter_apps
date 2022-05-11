@@ -3,14 +3,15 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'scale_animated_text_page.dart';
 
-class WavyAnimatedTextPage extends StatefulWidget {
-  const WavyAnimatedTextPage({Key? key}) : super(key: key);
+class FlickerAnimatedTextPage extends StatefulWidget {
+  const FlickerAnimatedTextPage({Key? key}) : super(key: key);
 
   @override
-  State<WavyAnimatedTextPage> createState() => _WavyAnimatedTextPageState();
+  State<FlickerAnimatedTextPage> createState() =>
+      _FlickerAnimatedTextPageState();
 }
 
-class _WavyAnimatedTextPageState extends State<WavyAnimatedTextPage> {
+class _FlickerAnimatedTextPageState extends State<FlickerAnimatedTextPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +36,7 @@ class _WavyAnimatedTextPageState extends State<WavyAnimatedTextPage> {
                     /// adding wavy animation
                     ///
                     animatedTexts: [
-                      WavyAnimatedText(
+                      FlickerAnimatedText(
                         'Flutter',
                         textStyle: GoogleFonts.cairo(
                           color: Colors.green,
@@ -43,7 +44,7 @@ class _WavyAnimatedTextPageState extends State<WavyAnimatedTextPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      WavyAnimatedText(
+                      FlickerAnimatedText(
                         'Is Beautiful',
                         textStyle: GoogleFonts.mandali(
                           color: Colors.amber[600],
@@ -51,7 +52,7 @@ class _WavyAnimatedTextPageState extends State<WavyAnimatedTextPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      WavyAnimatedText(
+                      FlickerAnimatedText(
                         'Isn\'t it?',
                         textStyle: const TextStyle(
                           fontSize: 60.0,

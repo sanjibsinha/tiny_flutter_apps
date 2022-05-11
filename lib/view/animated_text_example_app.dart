@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'wavy_animated_text_page.dart';
+import 'flicker_animated_text_page.dart';
 
 class AnimatedTextExampleApp extends StatelessWidget {
   const AnimatedTextExampleApp({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class AnimatedTextExampleApp extends StatelessWidget {
       title: 'Animated Text Kit',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: const WavyAnimatedTextPage(),
+      home: const FlickerAnimatedTextPage(),
     );
   }
 }
