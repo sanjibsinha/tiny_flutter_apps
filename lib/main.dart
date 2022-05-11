@@ -8,29 +8,6 @@ void main() => runApp(const AnimatedTextExampleApp());
 /* 
   
       AnimatedTextExample(
-        label: 'Wavy Text',
-        color: Colors.purple,
-        child: DefaultTextStyle(
-          style: const TextStyle(
-            fontSize: 20.0,
-          ),
-          child: AnimatedTextKit(
-            animatedTexts: [
-              WavyAnimatedText(
-                'Hello World',
-                textStyle: const TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              WavyAnimatedText('Look at the waves'),
-              WavyAnimatedText('They look so Amazing'),
-            ],
-            onTap: onTap,
-          ),
-        ),
-      ),
-      AnimatedTextExample(
         label: 'Flicker',
         color: Colors.pink[300],
         child: DefaultTextStyle(
